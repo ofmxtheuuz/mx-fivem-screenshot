@@ -2,7 +2,6 @@
 
 const vRP = VrpProxy.getInterface('vRP');
 const vRPClient = VrpTunnel.getInterface('vRP');
-const main = require("./main.json")
 const fs = require("fs")
 const imgbbUploader = require("imgbb-uploader");
 
