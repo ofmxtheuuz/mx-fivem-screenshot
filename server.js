@@ -14,6 +14,7 @@ RegisterCommand("screen", function (source, args, rawCommand) {
             const base = data.split("base64,")
             const base64 = base[1]
 
+            // user id
             let user_id = vRP.getUserId(src)
 
             const options = {
