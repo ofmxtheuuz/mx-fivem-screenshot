@@ -10,11 +10,10 @@ RegisterCommand("screen", function (source, args, rawCommand) {
     if (vRP.hasPermission(user_source_id, "owner.permissao")) {
         let src = vRP.getUserSource(parseInt(args[0]))
         exports['screenshot-basic'].requestClientScreenshot(src, {}, (err, data) => {
-            //Encode the base64 data
+            
             const base = data.split("base64,")
             const base64 = base[1]
 
-            // user id
             let user_id = vRP.getUserId(src)
 
             const options = {
