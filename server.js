@@ -17,7 +17,7 @@ RegisterCommand("screen", function (source, args, rawCommand) {
             let user_id = vRP.getUserId(src)
 
             const options = {
-                apiKey: "YOUR_IMGBB_APIKEY",
+                apiKey: "YOUR_IMGBB_APIKEY", // your imgbb_key
                 name: user_id.toString(),
                 base64string:
                     base64,
